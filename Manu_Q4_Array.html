@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    <script>
+        let Films=["Turbo","Premalu","Aavesham","Lucifer","Puzhu","Kannur squad","Kaithi","BigB"]
+        document.write("List of 7 Films:"+Films)
+        document.write("<br><br>My Favorite Film:"+Films[7])
+        Films.push("Jailer")
+        document.write("<br><br>Inserting a new film to List:"+Films)
+        Films.pop()
+        document.write("<br><br>Popping a film from the List:"+Films)
+        delete(Films[3])
+        document.write("<br><br>Deleting the least interseted film(Lucifer) from list:"+Films)
+        NewList=Films.slice(2,7)
+        document.write("<br><br>NewList of Film position 3 to 6:"+NewList)
+        x=Films.indexOf("Puzhu")
+        document.write("<br><br><br>List of 7 Films:"+Films)
+        document.write("<br>Position of film acted by my favourite actor:"+(x+1))
+    </script>
+</body>
+</html>
